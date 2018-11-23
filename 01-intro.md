@@ -1,5 +1,10 @@
 # Chapter 1.
 
+### Network
+* 어렵게 생각하지 말고, Process 와 Process 간의 통신이다 라고 생각하자.
+* 같은 컴퓨터 안에서의 통신이라면, Message passing, PIPE 를 통해서 해결하겠지만, 다른 컴퓨터의 Process 와 통신을 해결하는 것은 Socket 이라는 API 이다.
+
+
 ### Network structure.
 * Network edge
     * Applications and hosts
@@ -79,7 +84,8 @@
 
 * Packet loss 가 있을 때, 재전송 해주는 것은 TCP 의 역할이다.
 * Router 는 TCP stack 이 없기 때문에, 재전송 하지 않는다.
-[picture]
+
+![TCPLOSS](/pictures/01/TCP-LOSS.png)
 *********************************************
 ## Network layering
 * Network 는 굉장히 복잡하다. 그 굉장한 복잡함을 조금이라도 쉽게 해결하기 위해서는, Layering 이 필수이다. 그래서, 일어난 일이다.
