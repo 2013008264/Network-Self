@@ -77,7 +77,7 @@
 
 ### DNS hierarchy
 
-![picture]("picture")
+![DNS-HIER](/pictures/02/DNS-HIERARCHY.png)
 
 ### Local DNS Server
 * ISP 가 가지고 있는 것입니다.
