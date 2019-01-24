@@ -14,14 +14,23 @@
 ********************
 ## UDP
 Header 에 고작 4개 뿐이다.
+
+
 |source port| dest port | length | checksum |
 |---|---|---|---|
+
 
 * Checksum 을 통한 Error checking 이 가능합니다.
     * Error 임이 확인되었을 경우, 해당 Message 는 유실됩니다.
 
 * UDP 는 Message 유실이 크게 상관있지 않을 때 사용됩니다.
     * Streaming service
+
+* 예외적으로 DNS 는 UDP 를 사용합니다.
+    * TCP 의 3 way handshake 가 DNS 서버 입장에서 매우 큰 오버헤드 입니다.
+    * DNS 서버는 connection 을 유지할 필요가 없습니다.
+    * DNS 요청은 굉장히 크기가 작기 때문에, UDP Segment 에 아주 딱 맞습니다.
+    * UDP 가 reliable 하지 않아도, application layer 에서 해당 기능을 추가할 수 있습니다.
 
 *********************
 ## Before TCP...
