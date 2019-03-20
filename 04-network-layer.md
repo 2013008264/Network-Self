@@ -21,7 +21,7 @@
   * Router 가 주로 하는 일은 Longest prefix matching 이다.
 
 ## IP
-#### IP datagram
+#### IP packet
 * TTL : Time to live
     * Traffic 안정성 증가
     * Routing table 이 잘못되어서 loop 를 도는 경우.
