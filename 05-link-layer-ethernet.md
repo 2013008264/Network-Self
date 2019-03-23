@@ -28,3 +28,23 @@
 
 **This is very different to Router's forwarding table!!**
 **This is just for one hop!!**
+
+### CSMA/CD
+> Talk when medium is clear.
+> But this cannot guarantee that there are no collisions.
+* If collision is detected
+  * Stop immediately.
+  * Exponential backoff.
+
+### Switch
+> Link layer device
+
+* Divide collision domain.
+* Network does not know about this device.
+* Switch table
+  * Self learning
+    * If unknown MAC addr -> flooding and write it.
+
+* Router --> Make subnet. But switch uses same network!
+* Use switches in data center.
+  * Handling traffics --> layering.
